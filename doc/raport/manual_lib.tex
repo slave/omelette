@@ -1,0 +1,30 @@
+\subsection{Biblioteka standardowa}
+
+Na razie jet w postaci dwóch plików .uml: class.uml oraz usecase.uml definiujące prototypy dla podstawowych obiektów diagramu klas oraz diagramu przypadków użycia. Można je traktować jako gotowe zestawy obiektów najczęsciej wykorzystywanych elementów tychże diagramów.
+W class.uml znajdują się:
+\begin{itemize}
+\item prototype base class \\
+Definicja klasy. Możliwe klucze to: \textbf{name}(nazwa klasy),\textbf{stereotype}(nadanie stereotypu). 
+\item prototype base relation \\
+Definicja relacji. Możliwe klucze to: \textbf{name}, \textbf{arrow}(zwrot strzałki), \textbf{direction}(umiejscowienie strzałki, przy czym może mieć takie wartosci jak \textbf{none}, \textbf{source}, \textbf{target}, \textbf{both}), \textbf{source-count}/\textbf{target-count}(krotnosci zgodne z UML obiektu docelowego oraz źródłowego), \textbf{source-role}/\textbf{target-role}(role zgodnie z UML obiektu docelowego oraz źródłowego). Wymagane klucze to: \textbf{source-object}/\textbf{target-object}(nazwy obiektu docelowego oraz źródłowego potrzebne do pokazania relacji).
+\item prototype base note \\
+Definicja notatki. Możliwy klucz to \textbf{text} oznaczajacy tresć wewnątrz notatki. 
+\item prototype relation generalization \\
+Definicja relacji generalizacji zgodnie z UML. Oprócz tego że jej prototypem jest relacja, czyli ma skopiowane wszystkie jej wartosci kluczy. Dodatkowo ma przypisane wartosci(można je oczywiscie zmienić w pliku)dla kluczy: \textbf{arrow} oraz \textbf{direction}.
+\item prototype relation aggregation \\
+Definicja relacji agregacji zgodnie z UML. Podobnie jak generalizacja ma okreslone wartosci: \textbf{arrow} oraz \textbf{direction}.
+\item prototype relation composition \\
+Definicja relacji kompozycji zgodnie z UML. Podobnie jak generalizacja czy agregacja ma okreslone wartosci: \textbf{arrow} oraz \textbf{direction}.
+\item prototype relation association \\
+Definicja relacji asocjacjii zgodnie z UML. Podobnie jak generalizacja, agregacja czy kompozycja ma okreslone wartosci: \textbf{arrow} oraz \textbf{direction}.
+
+\end{itemize}
+
+W usecase.uml znajdują się:
+\begin{itemize}
+\item prototype base actor \\
+Definicja aktora zgodnie z UML. Tylko klucz \textbf{name} jest możliwy do ustawienia.
+\item prototype base usecase \\
+Definicja przypadku użycia zgodnie z UML. Tylko klucz \textbf{name} jest możliwy do ustawienia.
+
+\end{itemize}
